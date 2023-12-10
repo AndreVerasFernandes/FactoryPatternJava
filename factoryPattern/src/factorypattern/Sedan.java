@@ -8,21 +8,39 @@ package factorypattern;
  *
  * @author veras
  */
-public class Sedan implements Carro {
-    private final String modelo;
-    private final String fabricante;
-
-    public Sedan(String modelo, String fabricante) {
-        this.modelo = modelo;
-        this.fabricante = fabricante;
+public class Sedan extends Carro {
+    
+    private boolean carroSedan;
+    
+    public Sedan(){}
+    
+    public boolean isSedan(){
+        return carroSedan;
     }
-
-   
-    public String getModelo() {
-        return modelo;
+    
+    public void setSedan(boolean sd){
+        carroSedan = sd;
     }
-
-    public String getFabricante() {
-        return fabricante;
-    }
+    
+//    private final String modelo;;
+//    private final String fabricante;
+//
+//    public Sedan(String modelo, String fabricante) {
+//        this.modelo = modelo;
+//        this.fabricante = fabricante;
+//    }
+//
+//   
+//    public String getModelo() {
+//        return modelo;
+//    }
+//
+//    public String getFabricante() {
+//        return fabricante;
+//    }
+    
+    
+//    public Carro FabricarCarro(){
+//        return new FabricarSedan();
+    
 }

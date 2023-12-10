@@ -8,9 +8,8 @@ package factorypattern;
  *
  * @author veras
  */
-public class FabricarSedan implements Fabricar {
-    @Override
+public class FabricarSedan extends Fabricar {
     public Carro fabricarCarro() {
-        return new Sedan("Sedan", "FabricanteHatch");
+        return new Sedan();
     }
 }

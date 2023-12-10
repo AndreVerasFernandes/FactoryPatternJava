@@ -8,21 +8,40 @@ package factorypattern;
  *
  * @author veras
  */
-public class Hatch implements Carro {
-    private final String modelo;
-    private final String fabricante;
-
-    public Hatch(String modelo, String fabricante) {
-        this.modelo = modelo;
-        this.fabricante = fabricante;
+public class Hatch extends Carro {
+    
+    private boolean carroHatch;
+    
+    public Hatch(){}
+    
+    public boolean isHatch(){
+        return carroHatch;
     }
-
-
-    public String getModelo() {
-        return modelo;
+    
+    public void setHatch(boolean ht){
+        carroHatch = ht;
     }
+    
+    
+    
+//    private final String modelo;;
+//    private final String fabricante;
+//
+//    public Hatch(String modelo, String fabricante) {
+//        this.modelo = modelo;
+//        this.fabricante = fabricante;
+//    }
+//
+//
+//    public String getModelo() {
+//        return modelo;
+//    }
+//
+//    public String getFabricante() {
+//        return fabricante;
+//    }
+//    
+//    public Carro FabricarCarro(){;;
+//        return new FabricarHatch();
 
-    public String getFabricante() {
-        return fabricante;
-    }
 }

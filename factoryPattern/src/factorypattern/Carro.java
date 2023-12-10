@@ -8,6 +8,20 @@ package factorypattern;
  *
  * @author 
  */
-public interface Carro {
+public class Carro {
+    private String modelo;
+    private String fabricante;
+    
+    public String getModelo(){
+        return modelo;
+    }
+    
+    public void setModelo(){
+        
+    }
+    
+    public String getFabricante(){
+        return fabricante;
+    }
   
 }

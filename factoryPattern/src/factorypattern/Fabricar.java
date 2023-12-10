@@ -8,7 +8,9 @@ package factorypattern;
  *
  * @author veras
  */
-public interface Fabricar {
-    Carro fabricarCarro();
+public abstract class Fabricar {
+    
+    abstract public Carro fabricarCarro();
+ 
 }
 
