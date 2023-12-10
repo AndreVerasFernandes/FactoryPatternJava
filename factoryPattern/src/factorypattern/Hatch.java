@@ -15,12 +15,9 @@ public class Hatch extends Carro {
     public Hatch(){}
     
     public boolean isHatch(){
-        return carroHatch;
+        return carroHatch = true;
     }
-    
-    public void setHatch(boolean ht){
-        carroHatch = ht;
-    }
+
     
     
     

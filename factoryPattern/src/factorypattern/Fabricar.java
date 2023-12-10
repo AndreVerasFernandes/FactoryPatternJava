@@ -4,13 +4,7 @@
  */
 package factorypattern;
 
-/**
- *
- * @author veras
- */
 public abstract class Fabricar {
-    
     abstract public Carro fabricarCarro();
- 
 }
 

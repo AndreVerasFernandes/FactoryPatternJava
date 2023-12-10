@@ -11,14 +11,43 @@ package factorypattern;
 public class Cliente {
     
     public static void main(String[] args) {
-        FabricarHatch carroHatch = new FabricarHatch();
         
-        List<Hatch> conjuntoHatch = new ArrayList<Hatch>();
-        Hatch carrohatchh;
-        for(int i = 0; i < 1; ++i){
-            carrohatchh = (Hatch)FabricarHatch.Fabricar();
+        String fabricante = "toyota";
+        String modeloDoCarro = "corolla";
+        
+        
+        
+        if(modeloDoCarro.equals("Argo")){
+            
+            Hatch carrohatchh;
+            FabricarHatch carroH = new FabricarHatch();
+                        
+            carrohatchh = (Hatch)carroH.fabricarCarro();
+            carrohatchh.setFabricante(fabricante);
+            carrohatchh.setModelo(modeloDoCarro);
+             
+            System.out.println("modelo do carro: " + carrohatchh.getModelo());
+            System.out.println("fabricante do carro: " + carrohatchh.getFabricante());
+            System.out.println("e hatch? : " + carrohatchh.isHatch());
+            
+        } else if(modeloDoCarro.equals("corolla")){
+            
+            Sedan carroSedann;
+            FabricarSedan carroS = new FabricarSedan();
+            
+            carroSedann = (Sedan)carroS.fabricarCarro();
+            carroSedann.setFabricante(fabricante);
+            carroSedann.setModelo(modeloDoCarro);
+            
+            System.out.println("modelo do carro: " + carroSedann.getModelo());
+            System.out.println("fabricante do carro: " + carroSedann.getFabricante());
+            System.out.println("e Sedan? : " + carroSedann.isSedan());
         }
-      
+        
+       
+//        FabricarSedan carroS = new FabricarSedan();
+   
+
     }
     
 }

@@ -9,6 +9,7 @@ package factorypattern;
  * @author veras
  */
 public class FabricarSedan extends Fabricar {
+    @Override
     public Carro fabricarCarro() {
         return new Sedan();
     }

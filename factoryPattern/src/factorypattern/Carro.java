@@ -16,12 +16,18 @@ public class Carro {
         return modelo;
     }
     
-    public void setModelo(){
-        
+    public void setModelo(String carroModelo){
+        modelo = carroModelo;
     }
+    
+    
     
     public String getFabricante(){
         return fabricante;
+    }
+    
+    public void setFabricante(String carroFabricante){
+        fabricante = carroFabricante;
     }
   
 }

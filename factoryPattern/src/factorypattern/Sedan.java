@@ -15,12 +15,10 @@ public class Sedan extends Carro {
     public Sedan(){}
     
     public boolean isSedan(){
-        return carroSedan;
+        return carroSedan = true;
     }
     
-    public void setSedan(boolean sd){
-        carroSedan = sd;
-    }
+
     
 //    private final String modelo;;
 //    private final String fabricante;
